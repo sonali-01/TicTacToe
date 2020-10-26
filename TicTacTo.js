@@ -51,7 +51,8 @@ const Game = () => {
       
         if (board[i] === null && !calculateWinner(board) && entervalue()===true) {
           
-            const newBoard = [...board]; //Note, we have to create a new state object, and never mutate the current state and set it back. React wont come to know any state change in this case and there will be no re rendering that is going to happen
+            const newBoard = [...board]; 
+//Note, we have to create a new state object, and never mutate the current state and set it back. React wont come to know any state change in this case and there will be no re rendering that is going to happen
             if(player){ 
               newBoard[i] = player1;
               setPlayer(false);

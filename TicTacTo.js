@@ -43,9 +43,7 @@ const Board = ({ winningSquares,board, handleClick }) => {
 const Game = () => {
   const handleClick = (i) => {
       console.log(`square ${i} is clicked`);
-      //We need to record this interaction in the board state
-      //1. The square got fresh tap
-      //2. The square already had a value associated, in other words, board[i] had a non null value
+      
       const board = history[step];
       const entervalue=()=>step===history.length-1;//functionn to check if we are in history or not if we are back in history this function wont allow you to update the square value.
       
